@@ -1,0 +1,248 @@
+/* General Styles */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navigation Menu */
+.menue {
+    background-color: lightblue;
+    opacity: 95%;
+    width: 100%;
+}
+.logo {
+    font-weight: 600;
+}
+/* about  */
+.abt-b{
+    padding: 10px 20px;
+      font-size: 16px;
+      color: black;
+      background-color: #cff4fc;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 5px;
+}
+.abt-b:hover {
+    background-color: #72b9d7;
+  }
+
+/* Banner Section */
+.banner {
+    width: 100%;
+    background-image: url(/image/banner.png);
+    padding: 150px 20px;
+  /*  background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 20px;
+    opacity: 0;
+    transition: all 2s; */
+}
+
+/* Name Gradient */
+.name {
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #4158de 10%, #ffcc7e 40%, #c850ce 50%);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+u {
+    color: aqua;
+}
+
+.info {
+    padding-bottom: 20px;
+    margin-top: -25px;
+    text-align: center;
+}
+
+.abt {
+    padding: 15px 0;
+}
+
+/* Social Media Buttons */
+.button1:hover {
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: green;
+    transform: scale(1.5);
+  }
+  .button2:hover {
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #d73f8c;
+    transform: scale(1.5);
+  }
+  .button3:hover {
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: blue;
+    transform: scale(1.5);
+  }
+  .button4:hover {
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: blue;
+    transform: scale(1.5);
+  }
+  .con-btn {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .social {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .cont {
+    background-color: #d73f8c;
+    width: 100%;
+    height:100%;
+    padding: 20px;
+  }
+  @media (max-width: 768px) {
+    .social {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .button1:hover, .button2:hover, .button3:hover, .button4:hover {
+      transform: scale(1.3);
+    }
+}
+
+/* Image Hover Effects */
+.mri-img {
+    border: 5px dashed #52cfcd;
+    transition: all 0.3s;
+}
+.mri-img:hover {
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+
+/* Animations */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* Underline Effects */
+ .u1-line {
+    position: relative;
+    cursor: pointer;
+    color: inherit; /* Ensure the text color is consistent */
+}
+
+ .u1-line::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Adjust as needed for spacing */
+    height: 4px;
+    width: 50%; /* Define the width explicitly */
+    background-color: currentColor; /* Matches the text color */
+    transition: transform 0.4s ease-in-out; /* Smooth transition */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin:center; /* Animation starts from the left */
+}
+
+
+.u1-line:hover::after {
+    transform: scaleX(1); /* Expands the line on hover */
+}
+
+/* Cards Spacing */
+.crd1 {
+    padding-bottom: 88px;
+}
+
+.crd3 {
+    padding-bottom: 10px;
+}
+
+.crd4 {
+    padding-bottom: 65px;
+}
+
+.crd6 {
+    padding-bottom: 58px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        padding: 100px 10px;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .social {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social a {
+        margin: 5px;
+    }
+
+    .cont {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner {
+        padding: 80px 5px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+
+    .social {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .social a {
+        margin-bottom: 10px;
+    }
+}
+/*for effect, Initial hidden state */
+.hidden {
+    opacity: 0;
+    transform: translateX(-50px); /* Slide in from the left */
+    transition: all 0.8s ease-in-out; /* Smooth transition */
+}
+
+/* Visible state */
+.show {
+    opacity: 1;
+    transform: translateX(0); /* Slide into its normal position */
+}
