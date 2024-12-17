@@ -20,7 +20,7 @@ slideElements.forEach((el) => observer.observe(el));
 document.getElementById('openPdfButton').addEventListener('click', function() {
   // Open the PDF in a new tab
   const pdfName = "Mridhul CV";
-  const pdfFile = "./image/CV.pdf";
+  const pdfFile = "./image/Mridhul CV.pdf";
   window.location.href = pdfFile;
   document.title = pdfName;
 });

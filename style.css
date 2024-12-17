@@ -31,7 +31,7 @@
 /* Banner Section */
 .banner {
     width: 100%;
-    background-image: url(/image/banner.png);
+    background-image: url(./image/banner.png);
     padding: 150px 20px;
   /*  background-size: cover;
     background-repeat: no-repeat;
