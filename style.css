@@ -44,14 +44,14 @@
 .name {
     font-size: 40px;
     font-weight: 600;
-    background: linear-gradient(45deg, #4158de 10%, #ffcc7e 40%, #c850ce 50%);
+    background: linear-gradient(90deg, #1e3c72, #2a5298, #6a3093);
     background-clip: text;
     color: transparent;
     text-align: center;
 }
 
 u {
-    color: aqua;
+    color:blueviolet;
 }
 
 .info {
